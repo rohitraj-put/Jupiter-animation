@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   background-color: black;
+
+}
+
+
+.container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 20vh auto;
+    animation-name: ani;
+    animation-duration: 50s;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    border-bottom: 2px solid white;
+
+}
+
+.sun {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: gold;
+    box-shadow: 0px 0px 20px wheat;
+    left: 110px;
+    top: 110px;
+}
+
+.earth {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    right: 270px;
+    border-radius: 50px;
+
+}
+
+.sub {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    top: -50px;
+    left: -50px;
+    animation-name: ani;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.jupi {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 125px;
+    top: 80px;
+    background-color: blue;
+
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
